@@ -36,7 +36,7 @@ for(let y=0; y<wini.length; y++){
 }
 
 function quiziFrame(){
-window.open("Quiz_Form.html", "_self"); //Load page for actual quiz
+window.open("quiz.html", "_self"); //Load page for actual quiz
 //e.preventDefault();
 //const frameDiv = document.createElement('div');
 //.....const quizFrame = document.createElement('Iframe');
