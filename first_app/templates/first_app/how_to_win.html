@@ -1,14 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Win</title>
-</head>
-<body>
+	<head>
 
-    <h1>How to Win</h1>
+<meta charset="utf-8">
+
+<meta name="viewpoint" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+        
+      <!-- Bootstrap Library   -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     
+
+     <!-- Social Icon library -->
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+<!-- main style sheet  -->
+
+{% load static %}
+
+<link href="{% static 'first_app/S_files/css/styles.css' %}" rel="stylesheet">  
+
+   
+<title>The Flip Challenge: How to Win</title>
+        
+
+        
+  <!-- Social Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+        
+
+<!--Google fonts-->
+        
+                <!--Handlee font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+   
+            <!--Inconsolata font--> 
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+        
+        <!-- Michroma font -->
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    
+        
+
+	</head>
+	<body>
+
+    <div class="container-fluid">
+            <nav class="priNav">
+                
+                <ul>            
+                   <li class="active"><a href="{% url 'first_app:index' %}">HOME</a></li>
+                   <li><a href="{% url 'first_app:how' %}">HOW TO WIN</a></li>
+                   <li><a href="{% url 'first_app:contact' %}">CONTACT US</a></li>
+                   <li class="brand"><a href="{% url 'first_app:index' %}">The Flip Challenge</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+<div class="row howVideo">
+    <div class="col-sm-12">
+    <video class="howBannerVideo" id="bannar" autoplay loop muted poster>
+        <source src="{% static 'first_app/S_files/media/how.mp4' %}" type="video/mp4">
+    </video>
+    </div>
+</div>
+        
+<hr>
+
+    
+<div class="container howColDiv">
+    
+   <div class="container-fluid row">
+      <div class="col-sm-4">
+          <h2 class="howColText">Select the Prize</h2>
+          <img class="imgSelect" src="{% static 'first_app/S_files/media/select.jpg' %}" />
+          <br>
+          <br>
+        
+        <ul class="listStyle">
+            <li>Each prize is displayed and described in the home page</li><br>
+            <li>Since the quiz questions are generated wholly from featured books, hover the mouse over each prize's description for details of the book from which each set of questions was generated</li><br>
+            <li>Then once you decide on the prize you wish to win, click on the desired prize from the gallery to be routed to the quiz page</li><br>
+            <li>Respond to the prompt by clicking <b><em>OK</em></b>, and this will take you to the quiz page</li>
+            </ul> 
+        
+      </div>
+
+     <div class="col-sm-4">
+         <h2 class="howColText">Answer the Questions</h2>
+         <img class="imgSelect" src="{% static 'first_app/S_files/media/question_.jpg' %}" />
+         <br>
+         <br>
+           
+              <ul class="listStyle">
+
+                <li>On the quiz page, log in to play if you are already registered</li><br>
+                <li>If you have not registered, you have to register before you can log in to participate in the contest. Registration is completely free!</li><br><br>
+                <li>Once you log in, click on <b><em>Start Quiz</em></b> to load the quiz questions.</li><br> 
+
+            </ul> 
+          
+      </div>
+
+
+
+      <div class="col-sm-4">
+          <h2 class="howColText">Win the Prize</h2>
+        <img class="imgSelect" src="{% static 'first_app/S_files/media/win.jpg' %}" />
+        <br>
+          <br>
+              <ul class="listStyle">
+                <li>In the quiz, select your answers for each timed question</li><br>
+                <li>At the end of the quiz, your score will show on the quiz page. The questions carry equal marks, unless otherwise indicated. You can play each quiz only once per session</li><br>
+                <li>If two or more contestants score the same points, the contestants with the same highest scores will keep participating in follow-up quizes until someone scores the highest points. The winner is the person with the highest accurate and most prompt answers. The contest is based on speed and accuracy. There is no element of chance</li>
+            </ul> 
+        
+      </div>  
+
+
+   </div>
+</div>
+        
+
+
+<footer>   
+    
+<div class="container-fluid">
+    <div class="row container-fluid">
+      <div class="col-sm-12">
+         <nav class="secondaryNav">
+            <ul class="nav navbar-nav">
+                <li><a href="faq.html">Faq</a></li> 
+                <li><a href="Terms.html">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+             </ul>
+         </nav>
+      </div>
+    </div>
+    </div>
+    
+<div class="container social">
+  <div class="row">
+     <div class="col-sm-12">
+        <a class="iconImg" href="https://www.twitter.com"><img class="socialImg fb" src="{% static 'first_app/S_files/media/twitter.png' %}" /></a>
+        <a class="iconImg" href="https://www.facebook.com"><img class="socialImg twitter" src="{% static 'first_app/S_files/media/fb.png' %}" /></a>
+        <a class="iconImg" href="https://www.instagram.com"><img class="socialImg instagram" src="{% static 'first_app/S_files/media/instagram.png' %}" /></a>
+     </div>     
+  </div>
+</div> 
+    
+        
+<div class="container copyright">
+   <div class="row">
+       <div class="col-sm-12">
+         <p>Copyright &#169; 2022-2023 Zillion Services Ltd. All rights reserved</p> 
+       </div>
+   </div>
+</div>
+    
+</footer>
+<br>
+
 </body>
 </html>
