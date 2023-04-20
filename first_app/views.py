@@ -18,3 +18,9 @@ def quiz_view(request):
 
 def terms_view(request):
     return render(request, 'first_app/terms.html')
+
+def faq_view(request):
+    return render(request, 'first_app/faq.html')
+
+def privacy_view(request):
+    return render(request, 'first_app/privacy.html')
