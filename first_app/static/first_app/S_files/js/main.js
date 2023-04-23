@@ -32,6 +32,8 @@ for(let y=0; y<wini.length; y++){
 
 function quiziFrame(){
 window.open("quiz.html", "_self"); //Load page for actual quiz
+// window.open("{% url 'first_app:quiz' %}", "_self"); //Load page for actual quiz
+
 
 }
 
