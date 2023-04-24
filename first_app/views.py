@@ -1,10 +1,13 @@
 from django.shortcuts import render
+from . import models
 
 # Create your views here.
 def index_view(request):
-    details = {'first_name': 'Tony', 'last_name': 'Izuogu', 'role': 'Software Engineer'}
+    users = models.Register.objects.all()
+    #details = {'first_name': 'Tony', 'last_name': 'Izuogu', 'role': 'Software Engineer'}
+    users_list = {'register': users}
 
-    return render(request, 'first_app/index.html',context=details)
+    return render(request, 'first_app/index.html',context=users_list)
     
 
 def how_view(request):
