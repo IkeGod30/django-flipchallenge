@@ -8,8 +8,10 @@ def index_view(request):
     users_list = {'register': users}
 
     return render(request, 'first_app/index.html',context=users_list)
-    
 
+def register_view(request):
+    return render(request, 'first_app/register.html')
+    
 def how_view(request):
     return render(request, 'first_app/how_to_win.html')
 

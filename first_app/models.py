@@ -12,7 +12,7 @@ class Register(models.Model):
     confirm_password = models.CharField(max_length=50)
 
     def __str__(self):
-        return f"{self.first_name}, {self.last_name} was born on {self.dob}"
+        return f"{self.first_name} {self.last_name} is registered."
         
 
 

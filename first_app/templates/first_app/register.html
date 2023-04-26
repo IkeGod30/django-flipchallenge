@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+<!-- Bootstrap Library -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+<!-- Social Media Icon library -->
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<!-- main style sheet  -->
+
+{% load static %}
+
+<link href="{% static 'first_app/S_files/css/styles.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+    </div>
+
+    <div class="container">
+        <form action="" method="POST">
+            <div>
+               <label for="">First Name</label>
+               <input type="text">
+            </div>
+
+            <div>
+                <label for="">Last Name</label>
+                <input type="text">
+             </div>
+
+             <div>
+                <label for="">First Name</label>
+                <input type="text">
+             </div>
+
+             <div>
+                <label for="">Email Address</label>
+                <input type="email">
+             </div>
+
+             <div>
+                <label for="">User Name</label>
+                <input type="text">
+             </div>
+
+             <div>
+                <label for="">Password</label>
+                <input type="password">
+             </div>
+
+             <div>
+                <label for="">Confirm Password</label>
+                <input type="password">
+             </div>
+
+             <div>
+                <label for="">Date of Birth</label>
+                <input type="date">
+             </div>
+
+             <input class="btn btn-primary" type="submit">
+            
+
+        </form>
+    </div>
+   
+
+{% load static %}
+
+<script src="{% static 'first_app/S_files/js/main.js' %}"></script>
+</body>
+</html>
