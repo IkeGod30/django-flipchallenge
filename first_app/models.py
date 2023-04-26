@@ -5,7 +5,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 class Register(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    dob = models.DateField(validators=[MaxValueValidator(1999-9-20)])
+    dob = models.DateField(max_length=50) # validators=[MaxValueValidator(1999-9-20)]
     email = models.EmailField(unique=True)
     user_name = models.CharField(unique=True, max_length=50)
     password = models.CharField(max_length=50)

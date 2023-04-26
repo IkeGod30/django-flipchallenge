@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from django.urls import reverse
 from . import models
 
 # Create your views here.
@@ -10,7 +11,20 @@ def index_view(request):
     return render(request, 'first_app/index.html',context=users_list)
 
 def register_view(request):
-    return render(request, 'first_app/register.html')
+    if request.POST:
+        first = request.POST['first']
+        last = request.POST['last']
+        dob = request.POST['dob']
+        email = request.POST['email']
+        user = request.POST['user']
+        password = request.POST['password']
+        confirm = request.POST['confirm']
+        models.Register.objects.create(first_name=first,last_name=last,dob=dob,email=email,user_name=user,password=password,confirm_password=confirm)
+        return redirect(reverse('first_app:index'))
+    else:
+        return render(request,'first_app/register.html')
+    
+    #return render(request, 'first_app/register.html')
     
 def how_view(request):
     return render(request, 'first_app/how_to_win.html')
