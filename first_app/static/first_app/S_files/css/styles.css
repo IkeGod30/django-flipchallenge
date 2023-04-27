@@ -413,7 +413,11 @@ div.faqText ul {
     list-style-type: none;
 }
 
+/*  ### Css for Sign Up page ### */
 
+.signUp {
+    background: green;
+}
 
 /*####### Media Querry for Mobile  #########*/
 

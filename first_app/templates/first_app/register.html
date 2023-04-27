@@ -22,49 +22,50 @@
 
 </head>
 <body>
-    <div class="container">
-        <h1>Sign Up</h1>
+    <div class="container signUp" style="background: green; margin-top: 100px; width: 23%;">
+        <h1 style="text-align: center; color: white; padding: 5px;">Sign Up</h1>
     </div>
 
-    <div class="container">
-        <form action="" method="POST">
+    <div class="container" style="margin-top: 25px; display: flex; align-content: center;">
+        <form action="" method="POST" style="margin: auto;">
             {% csrf_token %}
             <div class="form-group">
-               <label for="first">First Name:</label>
-               <input class="form-control" type="text" id="first" name="first">
+               <label style="font-size: 1.6rem; color: grey;" for="first">First Name:</label>
+               <input style="font-size: 1.6rem;" class="form-control" type="text" id="first" name="first">
             </div>
 
             <div class="form-group">
-                <label for="last">Last Name:</label>
-                <input class="form-control" type="text" id="last" name="last">
+                <label style="font-size: 1.6rem;" for="last">Last Name:</label>
+                <input style="font-size: 1.6rem;" class="form-control" type="text" id="last" name="last">
              </div>
 
              <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input class="form-control" type="email" id="email" name="email">
+                <label style="font-size: 1.6rem;" for="email">Email Address:</label>
+                <input style="font-size: 1.6rem;" class="form-control" type="email" id="email" name="email">
              </div>
 
              <div class="form-group">
-                <label for="user">User Name:</label>
-                <input class="form-control" type="text" id="user" name="user">
+                <label style="font-size: 1.6rem;" for="user">User Name:</label>
+                <input style="font-size: 1.6rem;" class="form-control" type="text" id="user" name="user">
              </div>
 
              <div class="form-group">
-                <label for="password">Password:</label>
-                <input class="form-control" type="password" id="password" name="password">
+                <label style="font-size: 1.6rem;" for="password">Password:</label>
+                <input style="font-size: 1.6rem;" class="form-control" type="password" id="password" name="password">
              </div>
 
              <div class="form-group">
-                <label for="confirm">Confirm Password:</label>
-                <input class="form-control" type="password" id="confirm" name="confirm">
+                <label style="font-size: 1.6rem;" for="confirm">Confirm Password:</label>
+                <input style="font-size: 1.6rem;" class="form-control" type="password" id="confirm" name="confirm">
              </div>
-
+                <br>
              <div class="form-group">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob">
+                <label style="font-size: 1.6rem;" for="dob">Date of Birth:</label>
+                <input style="font-size: 1.6rem;" type="date" id="dob" name="dob">
              </div>
              <br>
              <input class="btn btn-primary" type="submit">
+             <input class="btn btn-primary" type="Reset">
             
 
         </form>

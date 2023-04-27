@@ -12,4 +12,5 @@ urlpatterns = [
     path('faq/',views.faq_view,name='faq'),
     path('privacy/',views.privacy_view,name='privacy'),
     path('register/',views.register_view,name='register'),
+    path('success/',views.success_view,name='success'),
 ]

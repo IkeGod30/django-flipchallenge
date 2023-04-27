@@ -25,6 +25,9 @@ def register_view(request):
         return render(request,'first_app/register.html')
     
     #return render(request, 'first_app/register.html')
+
+def success_view(request):
+    return render(request, 'first_app/success.html')
     
 def how_view(request):
     return render(request, 'first_app/how_to_win.html')
