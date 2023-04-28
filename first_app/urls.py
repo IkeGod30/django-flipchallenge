@@ -13,4 +13,5 @@ urlpatterns = [
     path('privacy/',views.privacy_view,name='privacy'),
     path('register/',views.register_view,name='register'),
     path('success/',views.success_view,name='success'),
+    path('sign_in/',views.sign_in_view,name='sign_in'),
 ]
