@@ -15,4 +15,9 @@ class Register(models.Model):
         return f"{self.first_name} {self.last_name} is registered."
         
 
-
+# class SignIn(models.Model):
+   # user_name = models.CharField(unique=True, max_length=50)
+   # password = models.CharField(max_length=50)
+    
+    # def __str__(self):
+        # return f"Hello {self.user_name}, you are now logged in."
