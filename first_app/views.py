@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.urls import reverse
 from . import models
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def index_view(request):
@@ -38,6 +39,7 @@ def how_view(request):
 def contact_view(request):
     return render(request, 'first_app/contact.html')
 
+@login_required
 def quiz_view(request):
     return render(request, 'first_app/quiz.html')
 
