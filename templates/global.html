@@ -53,7 +53,7 @@
 
 <body>
 
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <nav class="priNav">
             
             <ul>            
@@ -65,7 +65,42 @@
                <li class="brand"><a href="{% url 'first_app:sign_in' %}">Sign In</a></li>
             </ul>
         </nav>
-    </div>
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'first_app:index' %}">The Flip Challenge</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'first_app:how' %}">HOW TO WIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'first_app:contact' %}">CONTACT US</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'first_app:contact' %}">Login</a>
+              </li> 
+
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'first_app:contact' %}">Sign Up</a>
+              </li> 
+
+            </ul>
+          </div>
+        </div>
+        <!-- <div style="float: right; width: 100%; display: inline;">
+        <a style="display: inline;" class="nav-link" href="{% url 'first_app:contact' %}">Login</a>
+        <a style="display: inline;" class="nav-link" href="{% url 'first_app:contact' %}">Sign Up</a>
+        </div> -->
+        
+      </nav> 
+
+
         
     <div class="row bnar">
         <div class="col-sm-12">
