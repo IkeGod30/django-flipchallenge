@@ -84,12 +84,13 @@
 <!-- <video src="{% static 'first_app/S_files/media/banner.mp4' %}" type="video/mp4"></video> -->
 
     <!-- <h1 style="color: green; text-align: center;">Welcome back {{first_name | upper}} {{last_name}}, <br>the amazing {{role}}</h1> -->
-    <ul>{% for player in register %}
+    <!-- <ul>{% for player in register %}
         <li>{{player.first_name}} {{player.last_name}} is registered</li>
 
         {% endfor %}
 
-    </ul>
+    </ul> -->
+
     {% if user.is_authenticated %}
         <p style="color: green; font-size: 28px;">Welcome {{user.get_username}}. You are logged in</p>
         <a href="{% url 'logout' %}?next={{request.path}}">LOGOUT HERE</a>
@@ -97,6 +98,8 @@
         <p style="color: red; font-size: larger;">You are not logged in</p>
         <a href="{% url 'login' %}?next={{request.path}}">LOGIN HERE</a>
     {% endif %}
+
+    
     <h1 class="text-center mt-3 PrizeHead">Prize Gallery</h1>
 
     
