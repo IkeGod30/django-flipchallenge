@@ -1,24 +1,4 @@
 
-////####Hamburger menu for responsive primary nav ###
-
-//function unicode() {
-//    let x = document.getElementById('unicodeClick');
-//    
-//    if (x.className === "topNav") { 
-//        
-//        x.className += " mobileResponsive";
-//    } 
-//    
-//    else {
-//        
-//    x.className === "topNav";}
-//    
-//
-//}
-//
-//let x = document.getElementById('unicodeClick');
-//x.addEventListener('click', unicode, false);
-
 /////#### Click event for each image ##### ///
 
 const wini = document.getElementsByClassName('pryze');
