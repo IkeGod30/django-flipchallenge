@@ -1,6 +1,6 @@
 from django.contrib import admin
-from first_app.models import Register, QuesModel
+from first_app.models import Register
 
 # Register your models here.
 admin.site.register(Register)
-admin.site.register(QuesModel)
+
