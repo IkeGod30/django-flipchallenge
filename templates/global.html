@@ -81,16 +81,26 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'first_app:contact' %}">Login</a>
+                <a class="nav-link" href="{% url 'first_app:sign_in' %}">Login</a>
               </li> 
 
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'first_app:contact' %}">Sign Up</a>
+                <a class="nav-link" href="{% url 'first_app:register' %}">Sign Up</a>
               </li> 
 
             </ul>
           </div>
         </div>
+
+        {% if user.is_authenticated %}
+        <p style="color: green; font-size: 16px;">Welcome {{user.get_username}}. You are logged in</p>
+        <a href="{% url 'logout' %}?next={{request.path}}">LOGOUT HERE</a>
+    {% else %}
+        <p style="color: red; font-size: larger;">You are not logged in</p>
+        <a href="{% url 'login' %}?next={{request.path}}">LOGIN HERE</a>
+    {% endif %}
+
+
         <!-- <div style="float: right; width: 100%; display: inline;">
         <a style="display: inline;" class="nav-link" href="{% url 'first_app:contact' %}">Login</a>
         <a style="display: inline;" class="nav-link" href="{% url 'first_app:contact' %}">Sign Up</a>
