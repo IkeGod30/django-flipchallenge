@@ -14,16 +14,16 @@ class Register(models.Model):
     def __str__(self):
         return f"{self.first_name} {self.last_name} is registered."
     
-class QuesModel (models.Model):
-    question = models.CharField(max_length=200, null=True)
-    op1 = models.CharField(max_length=200, null=True)
-    op2 = models.CharField(max_length=200, null=True)
-    op3 = models.CharField(max_length=200, null=True)
-    op4 = models.CharField(max_length=200, null=True)
-    ans = models.CharField(max_length=200, null=True)
+# class QuesModel (models.Model):
+#     question = models.CharField(max_length=200, null=True)
+#     op1 = models.CharField(max_length=200, null=True)
+#     op2 = models.CharField(max_length=200, null=True)
+#     op3 = models.CharField(max_length=200, null=True)
+#     op4 = models.CharField(max_length=200, null=True)
+#     ans = models.CharField(max_length=200, null=True)
 
-    def __str__(self):
-        return self.question
+#     def __str__(self):
+#         return self.question
         
 
 # class SignIn(models.Model):
