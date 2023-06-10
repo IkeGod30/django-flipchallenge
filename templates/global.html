@@ -80,9 +80,9 @@
                 <a class="nav-link" href="{% url 'first_app:contact' %}">CONTACT US</a>
               </li>
               
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="{% url 'first_app:sign_in' %}">Login</a>
-              </li> 
+              </li>  -->
 
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'first_app:register' %}">Sign Up</a>
@@ -93,11 +93,11 @@
         </div>
 
         {% if user.is_authenticated %}
-        <p style="color: green; font-size: 16px;">Welcome {{user.get_username}}. You are logged in</p>
-        <a href="{% url 'logout' %}?next={{request.path}}">LOGOUT HERE</a>
+        <p style="color: green; font-size: 12px;">Welcome {{user.get_username}}. You are logged in</p>
+        <a href="{% url 'logout' %}?next={{request.path}}">LOGOUT</a>
     {% else %}
-        <p style="color: red; font-size: larger;">You are not logged in</p>
-        <a href="{% url 'login' %}?next={{request.path}}">LOGIN HERE</a>
+        <p style="color: red; font-size: 12;">You are not logged in</p>
+        <a href="{% url 'login' %}?next={{request.path}}">LOGIN</a>
     {% endif %}
 
 
