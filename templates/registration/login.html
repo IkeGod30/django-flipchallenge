@@ -11,16 +11,17 @@
         <p>Please log in to see this page</p>
     {% endif %}
 {% endif %}
-
-<form method="POST" action="{% url 'login' %}">
+<div class="container">
+<form class="form-group" method="POST" action="{% url 'login' %}">
     {% csrf_token %}
     {{form.username.label_tag}}
      {{form.username}}
      
      {{form.password.label_tag}}
      {{form.password}}
-     <input type="submit" value="login">
-     <input type="hidden" name="next" value="{{next}}">
+     <input class="form-control" type="submit" value="login">
+     <input class="form-control" type="hidden" name="next" value="{{next}}">
 
 
 </form>
+</div>
